@@ -8,7 +8,6 @@ Secara umum, aplikasi ini memiliki fitur sebagai berikut:
 - Pengolahan data siswa
 - Pengolahan data pengajar
 - Tugas (Pilihan Ganda, Essay dan Upload)
-- Ujian online
 - Berbagi materi
 - Diskusi materi
 - Jadwal mata pelajaran siswa
