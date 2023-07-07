@@ -1,6 +1,6 @@
-{% extends "layout-iframe.html" %}
-
-{% block content %}
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -19,6 +19,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
+    <script type="text/javascript">
 	define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------
@@ -28,7 +29,7 @@
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
-
+<script type="text/javascript">
 if (defined('ENVIRONMENT'))
 {
 	switch (ENVIRONMENT)
@@ -56,7 +57,7 @@ if (defined('ENVIRONMENT'))
  * Include the path if the folder is not in the same  directory
  * as this file.
  *
- */
+ */<script type="text/javascript">
 	$system_path = 'system';
 
 /*
@@ -73,6 +74,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
+        <script type="text/javascript">
 	$application_folder = 'application';
 
 /*
@@ -134,7 +136,7 @@ if (defined('ENVIRONMENT'))
  *  Resolve the system path for increased reliability
  * ---------------------------------------------------------------
  */
-
+<script type="text/javascript">
 	// Set the current directory correctly for CLI requests
 	if (defined('STDIN'))
 	{
@@ -160,6 +162,7 @@ if (defined('ENVIRONMENT'))
  *  Now that we know the path, set the main path constants
  * -------------------------------------------------------------------
  */
+        <script type="text/javascript">
 	// The name of THIS file
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 
@@ -175,7 +178,6 @@ if (defined('ENVIRONMENT'))
 
 	// Name of the "system folder"
 	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
-
 
 	// The path to the "application" folder
 	if (is_dir($application_folder))
@@ -204,4 +206,4 @@ require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */
 /* Location: ./index.php */
-{% endblock %}
+        
